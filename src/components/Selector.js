@@ -1,7 +1,6 @@
 import React from 'react'
 
-const Selector = (props) => {
-  const {countriesJson, setCountry, getCountryData } = props
+const Selector = ({countriesJson, setCountry, getCountryData}) => {
   return (
     <div>
       <select onChange={(e) => setCountry(e.target.value)}>

@@ -3,8 +3,7 @@ import Title from '../components/Title'
 import Card from '../components/Card'
 import Header from '../components/Header'
 
-const WorldPage = (props) => {
-  const { allCountriesData } = props
+const WorldPage = ({allCountriesData}) => {
   return (
     <div>
       <Header />

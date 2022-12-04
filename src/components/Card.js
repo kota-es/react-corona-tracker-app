@@ -1,8 +1,6 @@
 import React from 'react'
 
-const Card = (props) => {
-  const { allCountriesData } = props
-
+const Card = ({allCountriesData}) => {
   return (
     <div>
       {allCountriesData.map((singleData, index) => {

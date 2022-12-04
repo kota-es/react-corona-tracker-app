@@ -4,8 +4,7 @@ import Selector from '../components/Selector'
 import Results from '../components/Results'
 import Header from '../components/Header'
 
-const TopPage = (props) => {
-  const {countriesJson, setCountry, getCountryData, countryData } = props
+const TopPage = ({countriesJson, setCountry, getCountryData, countryData}) => {
   return (
     <div>
       <Header />

@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Results = (props) => {
-  const {date, newConfirmed, totalConfirmed, newRecovered, totalRecovered} = props.countryData
+const Results = ({countryData}) => {
+  const {date, newConfirmed, totalConfirmed, newRecovered, totalRecovered} = countryData
   return (
     <div>
       <p>日付： { date.slice(0, 10) }</p>
