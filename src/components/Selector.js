@@ -1,14 +1,7 @@
-import React, {useState} from 'react'
-import countriesJson from '../countries.json'
+import React from 'react'
 
-const Selector = () => {
-  const [country, setCountry] = useState(countriesJson[0].Slug);
-
-  const getCountryData = () => {
-    fetch(`https://monotein-books.vercel.app/api/corona-tracker/country/${country}`)
-    .then(res => res.json())
-    .then(data => console.log(data))
-  }
+const Selector = (props) => {
+  const {countriesJson, setCountry, getCountryData } = props
   return (
     <div>
       <select onChange={(e) => setCountry(e.target.value)}>
