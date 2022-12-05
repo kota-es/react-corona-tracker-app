@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Selector = ({countriesJson, setCountry, getCountryData}) => {
+const Selector = ({countriesJson, setCountry}) => {
   return (
     <div>
       <select onChange={(e) => setCountry(e.target.value)}>
@@ -8,7 +8,6 @@ const Selector = ({countriesJson, setCountry, getCountryData}) => {
           <option key={index} value={country.Slug}>{country.Country}</option>
         )}
       </select>
-      <button onClick={getCountryData}>GetData</button>
     </div>
   )
 }

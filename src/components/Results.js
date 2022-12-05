@@ -14,7 +14,6 @@ const Results = ({countryData, loading}) => {
     <p>新規回復者： { newRecovered.toLocaleString() }</p>
     <p>回復者総数： { totalRecovered.toLocaleString() }</p>
   </div>
-  <div>re</div>
   </>
     }
     </>
