@@ -1,12 +1,5 @@
 import React from 'react'
-
-type SelectorType = {
-  countriesJson: {
-    Country: string,
-    Slug: string,
-  }[],
-  setCountry: React.Dispatch<React.SetStateAction<string>>,
-}
+import { SelectorType } from '../types'
 
 const Selector = ({countriesJson, setCountry}: SelectorType) => {
   return (

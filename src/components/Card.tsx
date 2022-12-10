@@ -1,6 +1,7 @@
 import React from 'react'
+import { CardType } from '../types'
 
-const Card = ({allCountriesData}) => {
+const Card = ({allCountriesData}: CardType) => {
   return (
     <div>
       {allCountriesData.map((singleData, index) => {

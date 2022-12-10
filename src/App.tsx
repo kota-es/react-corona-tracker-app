@@ -4,14 +4,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import TopPage from './pages/TopPage';
 import WorldPage from './pages/WorldPage';
 import countriesJson from './countries.json'
-
-type CountryDataType = {
-  date: string,
-  newConfirmed: number,
-  totalConfirmed: number,
-  newRecovered: number,
-  totalRecovered: number,
-}
+import { CountryDataType, AllCountriesDataType} from './types'
 
 function App() {
   const [loading, setLoading] = useState<boolean>(false)
@@ -23,7 +16,11 @@ function App() {
     newRecovered: 0,
     totalRecovered: 0,
   });
-  const [allCountriesData, setAllCountriesData] = useState([])
+  const [allCountriesData, setAllCountriesData] = useState<AllCountriesDataType>([{
+    Country: '',
+    NewConfirmed: 0,
+    TotalConfirmed: 0,
+  }])
 
   useEffect(() => {
     const getCountryData = () => {
